@@ -27,3 +27,11 @@ Deck::Deck() {
 	}
 
 }
+
+Card Deck::Get_top_card() {
+	return Cardeck.front();
+}
+
+Card Deck::Discard_top_card() {
+
+}
