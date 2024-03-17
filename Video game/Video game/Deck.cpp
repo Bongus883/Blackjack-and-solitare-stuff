@@ -1,5 +1,8 @@
 #include "Deck.h"
 #include <algorithm>
+#include <iostream>
+#include <vector>
+#include <random>
 
 using std::shuffle;
 
@@ -32,6 +35,6 @@ Card Deck::Get_top_card() {
 	return Cardeck.front();
 }
 
-Card Deck::Discard_top_card() {
+//Card Deck::Discard_top_card() {
 
-}
+//}
