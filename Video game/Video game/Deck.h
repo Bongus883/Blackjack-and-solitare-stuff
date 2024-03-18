@@ -11,5 +11,5 @@ private:
 public:
 	Deck();
 	Card Get_top_card();
-	Card Discard_top_card();
+	void Shuffle();
 };

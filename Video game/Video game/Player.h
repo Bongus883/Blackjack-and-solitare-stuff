@@ -12,6 +12,8 @@ private:
 	int Total_card_value_P;
 
 public:
-
+	Player();
+	int get_card_value_P();
+	void give_cardP(Card THEcardP);
 };
 
