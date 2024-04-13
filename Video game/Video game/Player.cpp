@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Deck.h"
 
 
 Player::Player(){
@@ -11,4 +12,5 @@ int Player::get_card_value_P() {
 
 void Player::give_cardP(Card THEcardP) {
 	Player_hand.push_back(THEcardP);
+	remove Cardeck.front();
 }
