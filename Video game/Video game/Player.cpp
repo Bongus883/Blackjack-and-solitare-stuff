@@ -12,5 +12,5 @@ int Player::get_card_value_P() {
 
 void Player::give_cardP(Card THEcardP) {
 	Player_hand.push_back(THEcardP);
-	remove Cardeck.front();
+	Total_card_value_P += THEcardP.get_value();
 }
