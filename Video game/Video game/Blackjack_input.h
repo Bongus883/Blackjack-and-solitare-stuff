@@ -4,6 +4,9 @@ using namespace std;
 
 class Blackjack_input
 {
+private:
+
+
 public:
 	void Hit(string Hit);
 	void Stand(string Stand);
