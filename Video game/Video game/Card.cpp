@@ -18,3 +18,5 @@ string Card::get_suit() {
 string Card::get_desc() {
 	return Card_description;
 }
+
+//I'm not really sure what to add in here. This is just where the other code I need to make the functions work is stored. It is important and stuff

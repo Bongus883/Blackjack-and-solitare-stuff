@@ -14,3 +14,5 @@ void Dealer::give_cardD(Card THEcardD) {
 	Dealer_hand.push_back(THEcardD);
 	Total_card_value_D += THEcardD.get_value();
 }
+
+//Same deal as the Dealer.h file. It's the same as the Player files

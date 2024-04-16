@@ -17,3 +17,4 @@ public:
 	void give_cardD(Card THEcardD);
 };
 
+//Everything here is the same as the Blackjack player file, but for the dealer instead.
