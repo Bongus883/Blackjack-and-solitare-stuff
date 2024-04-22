@@ -63,10 +63,13 @@ int main()
 		THAT_GUY.give_cardD(MYcard);
 		cout << "The dealer's other card was: " << MYcard.get_desc() << ", so, their final total is " << THAT_GUY.get_card_value_D() << endl;
 		if (THAT_GUY.get_card_value_D() > 21 && YOU.get_card_value_P() < 21) { //This is what happens if the dealer busts and you don't
-			cout << "YOU WON!! You leap up onto the table and begin breakdancing in the dealer's face as they being foaming at the mouth. You actually have no idea how much money you won, but you don't care. The sweet, sweet taste of victory and the disturbing gargling noises coming from the dealer's convulsing body are more than enough for you. As the dealer is carried away on a stretcher while a new one walks up to the table to replace them, you wonder what you are going to do now" << endl;
+			cout << "YOU WON!! You leap up onto the table and begin breakdancing in the dealer's face as they being foaming at the mouth\nYou actually have no idea how much money you won, but you don't care. The sweet, sweet taste of victory and the disturbing gargling noises coming from the dealer's convulsing body are more than enough for you\nAs the dealer is carried away on a stretcher while a new one walks up to the table to replace them, you wonder what you are going to do now" << endl;
 		}
 		else if (YOU.get_card_value_P() > 21 || YOU.get_card_value_P() < THAT_GUY.get_card_value_D()) { //This is what happens if either you bust, or the dealer has a higher card value than you
-			cout << "You lost... The entire casino collectively stands up, looks in your direction, and begins pointing and laughing at you.The dealer then begins to ask you which of many debilitating neurological symptoms you are currently suffering from, seeing as thought they would very clearly be the cause of your loss in this luck based game (Unless you just kept on hitting, which is pretty funny). So, what now ? You aren't the type to be easily dissuaded, and your addictive vices won't feed themselves" << endl;
+			cout << "You lost... The entire casino collectively stands up, looks in your direction, and begins pointing and laughing at you\nThe dealer then begins to ask you which of many debilitating neurological symptoms you are currently suffering from, seeing as thought they would very clearly be the cause of your loss in this luck based game (Unless you just kept on hitting, which is pretty funny)\nSo, what now ? You aren't the type to be easily dissuaded, and your addictive vices won't feed themselves" << endl;
+		}
+		else if (YOU.get_card_value_P() > THAT_GUY.get_card_value_D()) { //This is what happens if you get a higher card value than the dealer
+			cout << "YOU WON!! You leap up onto the table and begin breakdancing in the dealer's face as they being foaming at the mouth\nYou actually have no idea how much money you won, but you don't care. The sweet, sweet taste of victory and the disturbing gargling noises coming from the dealer's convulsing body are more than enough for you\nAs the dealer is carried away on a stretcher while a new one walks up to the table to replace them, you wonder what you are going to do now" << endl;
 		}
 		else if (YOU.get_card_value_P() == THAT_GUY.get_card_value_D() || (YOU.get_card_value_P() > 21 && THAT_GUY.get_card_value_D() > 21)) { //This is what happens in case of a tie
 			cout << "It's... a tie?? Since nothing happens in a tie, the cards get re-dealt and the game begins again" << endl;
@@ -81,9 +84,7 @@ int main()
 		cout << "Didn't I tell you? A portal to hell opens directly beneath you, sending you straight to the depths of hell, where you will live the rest of your existance making small talk with the devil\nPlease follow the rules next time, you pusillanimous swine" << endl;
 	}
 	
-	//if (hiit == 2) int(Player::get_card_value_P <= 21) int(Dealer::get_card_value_D > 21) {
-	//	cout << ""
-	//}
+	
 	//You lost... The entire casino collectively stands up, looks in your direction, and begins pointing and laughing at you. The dealer then begins to ask you which of many debilitating neurological symptoms you are currently suffering from, seeing as thought they would very clearly be the cause of your loss in this luck based game. So, what now? You aren't the type to be easily dissuaded, and your addictive vices won't feed themselves. Do you want to play again despite your shameful defeat? (Type yes or no)
 	//YOU WON!! You leap up onto the table and begin breakdancing in the dealer's face as they being foaming at the mouth. You actually have no idea how much money you won, but you don't care. The sweet, sweet taste of victory and the disturbing gargling noises coming from the dealer's convulsing body are more than enough for you. As the dealer is carried away on a stretcher while a new one walks up to the table to replace them, you wonder what you are going to do now. Do you want to end on a high and take your leave now, or do you want to risk it all and play another game? (Type yes to play again, or no to stop)
 	//It's... a tie?? Since nothing happens in a tie, the cards get re-dealt and the game begins again
