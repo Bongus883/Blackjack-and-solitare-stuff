@@ -48,7 +48,7 @@ int main()
 		MYcard = Jackdeck.Get_top_card();
 		Jackdeck.Remove_top_card();
 		YOU.give_cardP(MYcard);
-		cout << "After hitting, you got " << MYcard.get_desc() << endl;
+		cout << "After hitting, you got: " << MYcard.get_desc() << endl;
 		cout << "Your current total is now " << YOU.get_card_value_P() << endl;
 		cout << "Do you want to hit or stand? " << endl;
 		cin >> hit_or_stand;
@@ -66,7 +66,7 @@ int main()
 			cout << "YOU WON!! You leap up onto the table and begin breakdancing in the dealer's face as they being foaming at the mouth\nYou actually have no idea how much money you won, but you don't care. The sweet, sweet taste of victory and the disturbing gargling noises coming from the dealer's convulsing body are more than enough for you\nAs the dealer is carried away on a stretcher while a new one walks up to the table to replace them, you wonder what you are going to do now" << endl;
 		}
 		else if (YOU.get_card_value_P() > 21 || YOU.get_card_value_P() < THAT_GUY.get_card_value_D()) { //This is what happens if either you bust, or the dealer has a higher card value than you
-			cout << "You lost... The entire casino collectively stands up, looks in your direction, and begins pointing and laughing at you\nThe dealer then begins to ask you which of many debilitating neurological symptoms you are currently suffering from, seeing as thought they would very clearly be the cause of your loss in this luck based game (Unless you just kept on hitting, which is pretty funny)\nSo, what now ? You aren't the type to be easily dissuaded, and your addictive vices won't feed themselves" << endl;
+			cout << "You lost... The entire casino collectively stands up, looks in your direction, and begins pointing and laughing at you\nThe dealer then begins to ask you which of many debilitating neurological symptoms you are currently suffering from, seeing as thought they would very clearly be the cause of your loss in this luck based game\nUnless you just kept on hitting, which is pretty funny\nSo, what now? You aren't the type to be easily dissuaded, and your addictive vices won't feed themselves" << endl;
 		}
 		else if (YOU.get_card_value_P() > THAT_GUY.get_card_value_D()) { //This is what happens if you get a higher card value than the dealer
 			cout << "YOU WON!! You leap up onto the table and begin breakdancing in the dealer's face as they being foaming at the mouth\nYou actually have no idea how much money you won, but you don't care. The sweet, sweet taste of victory and the disturbing gargling noises coming from the dealer's convulsing body are more than enough for you\nAs the dealer is carried away on a stretcher while a new one walks up to the table to replace them, you wonder what you are going to do now" << endl;
@@ -74,10 +74,6 @@ int main()
 		else if (YOU.get_card_value_P() == THAT_GUY.get_card_value_D() || (YOU.get_card_value_P() > 21 && THAT_GUY.get_card_value_D() > 21)) { //This is what happens in case of a tie
 			cout << "It's... a tie?? Since nothing happens in a tie, the cards get re-dealt and the game begins again" << endl;
 		}
-
-
-
-
 	}
 	else {
 		cout << "" << endl;
