@@ -13,6 +13,7 @@ private:
 public:
 	Waste();
 	Actual_card Draw();
+	void Take_card();
 	void shuffle();
 };
 

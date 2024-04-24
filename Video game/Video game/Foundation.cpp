@@ -8,6 +8,7 @@ int Foundation::Total_hit_cards() {
 	return Hit_cards;
 }
 
-//void Foundation::HIT(Actual_card) {
-//	Discard_pile.push_back(Actual_card);
-//}
+void Foundation::HIT(Actual_card Winner_time) {
+	Discard_pile.push_back(Winner_time);
+	//Hit_cards += Winner_time.get_cards();
+}

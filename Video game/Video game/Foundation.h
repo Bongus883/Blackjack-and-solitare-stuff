@@ -14,6 +14,6 @@ private:
 public:
 	Foundation();
 	int Total_hit_cards();
-	//void HIT(Actual_card);
+	void HIT(Actual_card Winner_time);
 };
 

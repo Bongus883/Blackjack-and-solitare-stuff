@@ -10,6 +10,10 @@ void Waste::shuffle() {
 	random_shuffle(THE_pile.begin(), THE_pile.end());
 }
 
+void Waste::Take_card() {
+	THE_pile.erase(THE_pile.begin());
+}
+
 Actual_card Waste::Draw() {
 	return THE_pile.front();
 }
