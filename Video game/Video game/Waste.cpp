@@ -22,22 +22,22 @@ Waste::Waste() {
 	vector<string> stuff = {};
 
 	for (int i = 0; i < 13; i++) {
-		Actual_card temp = Actual_card(stuff[i], "Hearts");
+		Actual_card temp = Actual_card(i + 1, "Hearts", stuff[i]);
 		THE_pile.push_back(temp);
 	}
 
 	for (int i = 0; i < 13; i++) {
-		Actual_card temp = Actual_card(stuff[i + 13], "Spades");
+		Actual_card temp = Actual_card(i + 1, "Spades", stuff[i + 13]);
 		THE_pile.push_back(temp);
 	}
 
 	for (int i = 0; i < 13; i++) {
-		Actual_card temp = Actual_card(stuff[i + 26], "Diamonds");
+		Actual_card temp = Actual_card(i + 1, "Diamonds", stuff[i + 26]);
 		THE_pile.push_back(temp);
 	}
 
 	for (int i = 0; i < 13; i++) {
-		Actual_card temp = Actual_card(stuff[i + 39], "Clubs");
+		Actual_card temp = Actual_card(i + 1, "Clubs", stuff[i + 39]);
 		THE_pile.push_back(temp);
 	}
 }

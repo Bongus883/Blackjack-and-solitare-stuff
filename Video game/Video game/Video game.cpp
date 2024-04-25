@@ -79,7 +79,11 @@ int main()
 				cout << "Do you want to end on a high and take your leave now, or do you want to risk it all and play another game? (Type yes to play again, or no to stop)" << endl; //Any text that asks you this gives you the option to play again or to stop playing. The results of both are self explanetory
 				cout << "" << endl;
 				cin >> weiner;
-				if (weiner == "no") {
+				cout << "" << endl;
+				if (weiner == "yes") {
+					cout << "You strap yourself in and prepare yourself for another round... The dealer calls you a degenerate schmuck, before spitting in your face again and dealing the ''''cards''''" << endl;
+				}
+				else if (weiner == "no") {
 					cout << "You decide that enough is enough, and proceed to scuttle out of the casino the way you came in, refusing to elaborate to the security guards as to why you came into the casino completely naked. Thank you for playing!" << endl;
 				}
 				else {
@@ -93,11 +97,10 @@ int main()
 				cout << "" << endl;
 				cin >> weiner;
 				cout << "" << endl;
-				while (weiner == "yes") {
+				if (weiner == "yes") {
 					cout << "You strap yourself in and prepare yourself for another round... The dealer calls you a degenerate schmuck, before spitting in your face again and dealing the ''''cards''''" << endl;
-
 				}
-				if (weiner == "no") {
+				else if (weiner == "no") {
 					cout << "You decide that enough is enough, and proceed to scuttle out of the casino the way you came in, refusing to elaborate to the security guards as to why you came into the casino completely naked. Thank you for playing!" << endl;
 				}
 				else {
@@ -111,10 +114,10 @@ int main()
 				cout << "" << endl;
 				cin >> weiner;
 				cout << "" << endl;
-				while (weiner == "yes") {
+				if (weiner == "yes") {
 					cout << "You strap yourself in and prepare yourself for another round... The dealer calls you a degenerate schmuck, before spitting in your face again and dealing the ''''cards''''" << endl;
 				}
-				if (weiner == "no") {
+				else if (weiner == "no") {
 					cout << "You decide that enough is enough, and proceed to scuttle out of the casino the way you came in, refusing to elaborate to the security guards as to why you came into the casino completely naked. Thank you for playing!" << endl;
 				}
 				else {
