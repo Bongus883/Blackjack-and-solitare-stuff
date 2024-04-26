@@ -6,6 +6,9 @@
 #include "Deck.h"
 #include "Player.h"
 #include "Dealer.h"
+#include "Actual_card.h"
+#include "Waste.h"
+#include "Foundation.h"
 
 using namespace std;
 
@@ -137,6 +140,11 @@ int main()
 	
 	//SOLITAIRE
 	if (THE_CHOICE == "solitaire") {
-		
+		srand(time(0));
+		Waste Wastio = Waste();
+		Foundation Hitts = Foundation();
+		Wastio.shuffle();
+		//Add other important classes here later once I figure stuff out
+		//cout << "Having been blacklisted from your local casino for public indecency, you have decided to engage in a different fun and cool recreational activity: Serial embezzlement\n"
 	}
 }
