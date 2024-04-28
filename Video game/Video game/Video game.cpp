@@ -15,7 +15,7 @@ using namespace std;
 int main()
 {
 	//Here is the first thing you see when you open the game. Type in the names of the respective games to play them
-	cout << "Welcome to the Ultra Awesome Game About Gambling & Other Fun Card Based Activities(TM)!\nDo you want to play blackjack or solitaire? (Type in the one you want to play)" << endl;
+	cout << "Welcome to The Ultra Awesome Game About Gambling & Other Fun Card Based Activities(TM)!\nDo you want to play blackjack or solitaire? (Type in the one you want to play)" << endl;
 	cout << "" << endl;
 	string THE_CHOICE;
 	cin >> THE_CHOICE;
@@ -145,6 +145,11 @@ int main()
 		Foundation Hitts = Foundation();
 		Wastio.shuffle();
 		//Add other important classes here later once I figure stuff out
-		//cout << "Having been blacklisted from your local casino for public indecency, you have decided to engage in a different fun and cool recreational activity: Serial embezzlement\n"
+		cout << "Having been blacklisted from your local casino for public indecency, you have decided to engage in a different fun and cool recreational activity: Serial embezzlement\nYou have been planning this day for years. You have worked for exactly 52 companies in the past, and you have has access to the financial information of each one\nNot only that, but you have also created a fictitious, high-ranking finincial advisor in each company that acts as your mouthpiece. You have promised various real investors high return product investments, but you actually intend to keep most of the money for yourself\nYou are about to enact the biggest Ponzi scheme in history. There are no products or services. You will be paying investors with money from other investors while become mega rich in the process\nAnd somehow, you have set this up in 52 individual companies.You may be a terrible gambler, but you are an incredible white collar criminal, if such a thing exists\nUnfortunately though, all 52 companies have coincidentally signed up to a security service that can tell when a scheme like yours is about to happen, and because of that, your plan is going to be a little harder to pull off\nIn order to bypass the security system, you need to win a game of Hit or Miss solitaire. If you can guess the right card as it comes up, then you can successfully bypass the system for ONE of the 52 companies, and begin your embezzlement\n...don't ask me why it's like that. I didn't make that security system" << endl;
+		cout << "" << endl;
+		cout << "I know this seems like an INCREDIBLY contrived way of creating a potentially funny scenario for a game of Hit or Miss. And you would be right\nBut ask yourself, would you seriously rather play regular, boring old Hit or Miss over whatever the heck this game is? Yeah, didn't think so, schmuck" << endl;
+		cout << "" << endl;
+		cout << "How to play: This is a game that almost plays itself\nYou (Or the game I guess) will count upwards from 1 to 13. Each time you count, a card is drawn\nIf the number you counted is the same number on the card, then it's a hit, and that card is taken out of the deck\nTake every card out of the deck by gussing correctly, and you win! Or in this case, you managed to successfully embezzle all 52 companies!\nIf you cycle through the deck twice without hitting once, then you lose. Or in this case, the police will instantly materialize at your location (Both in the game AND in real life, so the pressure is on friendo)\nYeah, I know it's not the most exciting game in the world, but every time you hit, you will get a potentially funny description of the comapny you just stole money from. So thats something" << endl;
+		//Game stuff goes down here
 	}
 }
