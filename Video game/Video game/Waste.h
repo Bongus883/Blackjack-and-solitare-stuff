@@ -15,5 +15,6 @@ public:
 	Actual_card Draw();
 	void Take_card();
 	void shuffle();
+	void MISS(Actual_card Loser_time);
 };
 
