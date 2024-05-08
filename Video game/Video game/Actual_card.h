@@ -19,3 +19,4 @@ public:
 	string get_funny_thing();
 };
 
+//The card class for solitaire. It contains the value of the card istelf (Although that value is unused, so it could very well be taken out), a score that shows how many cards you've hit, the suit, and the funny comapny description you get if you hit a card

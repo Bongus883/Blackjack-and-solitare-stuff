@@ -17,3 +17,4 @@ public:
 	void HIT(Actual_card Winner_time);
 };
 
+//This is the pile that cards go to when they are hit. It contains a vector to store those cards in, it keeps track of the cards you have hit, and a function to move hit cards to this pile 

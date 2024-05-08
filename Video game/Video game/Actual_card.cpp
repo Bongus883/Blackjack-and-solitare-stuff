@@ -22,3 +22,5 @@ string Actual_card::get_other_suit() {
 string Actual_card::get_funny_thing() {
 	return Funny;
 }
+
+//The functions that return the variables in the .h file

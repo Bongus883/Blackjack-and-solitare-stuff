@@ -12,3 +12,5 @@ void Foundation::HIT(Actual_card Winner_time) {
 	Discard_pile.push_back(Winner_time);
 	Hit_cards += Winner_time.embezzlement_total();
 }
+
+//What do I even need to say? This file contains the functions established in the .h file
