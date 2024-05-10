@@ -378,5 +378,11 @@ int main()
 			}
 			cin >> Uhh;
 		}
+		if (Hitts.Total_hit_cards() == 52) {
+			cout << "" << endl;
+			cout << "You did it! You managed to embezzle all 52 companies!\nAs you watch billions fill up your bank account, you sit back in your comfy chair and think about how much of a cool guy you are, and what exactly you are going to do with your newfound infinite wealth\nYour descicion? To found your own company, Ultrahelp - A company that people report random miscallanious problems they have to, so that other people can provide assistance in exhance for a monetary reward\nThe catch is that there are also job listings for other people to come in to both make the problem worse, and to stop the first person from helping in the first place in any way they choose\nWhy would you set up a company like this? For your own entertainment of course! What else would you be doing all day in your luxury Hawaiian penthouse? NOT hearing about how somebody stopped the construction of an orphanage with an army of domesticated beavers? Didn't think so" << endl;
+			cout << "" << endl;
+			cout << "Thank you for playing!" << endl;
+		}
 	}
 }
