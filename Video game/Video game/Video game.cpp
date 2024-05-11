@@ -155,7 +155,7 @@ int main()
 		cout << "How to play: This is a game that almost plays itself\nYou (Or the game I guess) will count upwards from 1 to 13. Each time you count, a card is drawn\nIf the number you counted is the same number on the card, then it's a hit, and that card is taken out of the deck\nTake every card out of the deck by gussing correctly, and you win! Or in this case, you managed to successfully embezzle all 52 companies!\nIf you cycle through the deck twice without hitting once, then you lose. Or in this case, the police will instantly materialize at your location (Both in the game AND in real life, so the pressure is on friendo)\nAlso, you will need to type something every time a card is drawn. You can type anything you want. It's just a way of making sure the game doesn't go through the entire deck in one go, you know?\nYeah, I know it's not the most exciting game in the world, but every time you hit, you will get a potentially funny description of the comapny you just stole money from. So thats something" << endl;
 		cout << "" << endl;
 		//This is pretty much the entirety of solitaire. You draw a card, and if it is equal to the number you are currently on, then you successfully embezzle the company. Once you get to the king, it loops back around to the Ace
-		while (Hitts.Total_hit_cards() < 52) {
+		while (Hitts.Total_hit_cards() != 52) {
 			cout << "You called an ace. The card and it's value you got back were..." << endl;
 			cout << "The value: " << Yeah.get_the_number() << endl;
 			cout << "The suit: " << Yeah.get_other_suit() << endl;
@@ -163,6 +163,7 @@ int main()
 				cout << "Nice! You just embezzled: " << Yeah.get_funny_thing() << endl;
 				Hitts.HIT(Yeah);
 				cout << "You have successfully embezzled " << Hitts.Total_hit_cards() << " out of 52 companies!" << endl;
+				if (!Waste::THE_pile.empty)
 				Yeah = Wastio.Draw();
 				Wastio.Take_card();
 			}
