@@ -163,7 +163,6 @@ int main()
 				cout << "Nice! You just embezzled: " << Yeah.get_funny_thing() << endl;
 				Hitts.HIT(Yeah);
 				cout << "You have successfully embezzled " << Hitts.Total_hit_cards() << " out of 52 companies!" << endl;
-				if (!Waste::THE_pile.empty)
 				Yeah = Wastio.Draw();
 				Wastio.Take_card();
 			}
