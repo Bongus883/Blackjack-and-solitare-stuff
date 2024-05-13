@@ -21,6 +21,9 @@ Actual_card Waste::Draw() {
 void Waste::MISS(Actual_card Loser_time) {
 	THE_pile.push_back(Loser_time);
 }
+int Waste::Get_size(){
+	return THE_pile.size();
+}
 //These are the functions that do the things in the .h file
 
 //This is the vector containing the deck of cards. It is very similar to the one used for Blackjack

@@ -16,6 +16,7 @@ public:
 	void Take_card();
 	void shuffle();
 	void MISS(Actual_card Loser_time);
+	int Get_size();
 };
 
 //This is the pile that you pick up cards from. It contains a vector of all the cards, as well as functions that gets the card at the op of the deck, removes said card, shuffles the deck at the start of the game, and puts the card back in the deck if it was a miss
